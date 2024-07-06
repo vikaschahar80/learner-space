@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-Whiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+                <nav class = "nav">
+                   <section class="section1">
+                        <img src="download.png" alt="logo" class="logoimg">
+                        <h2 id="name">Quiz-Whiz</h2>
+                    </section>
+                    <section class="section2">
+                        <a href="#GameOverview">Overview</a>
+                        <a href="#Gamehighlights">Highlights</a>
+                        <a href="#instruction">Instruction</a>
+                        <a href="#Game">Skip</a>
+                    </section>
+                </nav>
+        </header>
+        <main >
+            <div class="maincontainer">
+                <div id="GameOverview">
+                    <h2>Game Overview</h2>
+                    <p>This game is an interactive quiz where users answer a series of multiple-choice questions one at a time. Each question is displayed with several answer options, and the user selects their answer by clicking a radio button. Upon clicking the "Save and Next" button, the game saves the selected answer, updates the score if the answer is correct, and then displays the next question. This process repeats until all questions have been answered. At the end of the quiz, the game displays the user's total score, showing how many questions were answered correctly out of the total number of questions. This structure allows for an engaging and dynamic quiz experience, providing immediate feedback at the end.
+
+                    </p>
+                </div>
+                <div id="Gamehighlights">
+                    <h2>Game Highlights</h2>
+                    <ul>
+                        <li>The quiz presents questions with multiple answer options for the user to choose from.</li>
+                        <li>Users answer one question at a time and proceed to the next question by clicking the "Save and Next" button.</li>
+                        <li>The game keeps track of the user's score, updating it with each correct answer.</li>
+                        <li>At the end of the quiz, the total score is displayed, indicating how many questions were answered correctly</li>
+                        <li>The content updates dynamically, ensuring a smooth transition between questions and an engaging user experience.</li>
+                        <li>The quiz is interactive, requiring user input for each question and providing feedback based on their answers.</li>
+                    </ul>
+                </div>
+                <div id="instruction">
+                    <h2>How to play Quiz Game</h2>
+                    <p>Playing the quiz is straightforward and engaging. Start by reading the question presented on the screen. Below the question, you'll find a set of answer options. Carefully consider each option and select the one you believe is correct by clicking the radio button next to it. Once you've made your choice, click the "Save and Next" button to proceed to the next question. The quiz will automatically assess whether your answer is correct and update your score accordingly. Repeat this process for each subsequent question until you reach the end of the quiz. After answering all the questions, the final screen will display your total score, showing how many questions you got right out of the total number asked. Enjoy challenging yourself with this interactive quiz experience!
+
+                    </p>
+                </div>
+                <div id="Game">
+                    <h2>Quiz</h2>
+                    <div class="quiz-container">
+                        <div id="question-container">
+                            <div class="question" id="question"></div>
+                            <ul class="options" id="options"></ul>
+                            <button onclick="saveAndNext()" class="nextquestion">Save and Next</button>
+                        </div>
+                        <div id="result-container" class="result"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>
+                &copy; 2024 Vikas Games Pvt Limited. All rights reserved.
+            </p>
+            <p>
+                For reference visit  
+                <!-- these codes are mine so no web for reference of game -->
+                <a href="#OfficalWeb" >official website</a> or join  
+                <a href="#NOforums">forums</a>.
+            </p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
